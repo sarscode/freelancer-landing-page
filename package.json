@@ -1,0 +1,23 @@
+{
+  "name": "freelancer-landing-page",
+  "version": "1.0.0",
+  "description": "A sample project built using parcel-transformer-ejs",
+  "main": "index.js",
+  "repository": "git@github.com:sarscode/freelancer-landing-page.git",
+  "author": "Salifu Sani Rich <salifusanirich@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "source": "src/index.ejs",
+  "scripts": {
+    "serve": "parcel",
+    "build": "parcel build"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "2.6.0",
+    "parcel": "^2.6.0",
+    "parcel-transformer-ejs": "^1.0.0"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  }
+}
