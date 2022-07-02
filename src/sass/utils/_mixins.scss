@@ -1,0 +1,37 @@
+@use "sass:map";
+
+@mixin flex(
+  $direction: row,
+  $wrap: wrap,
+  $justify: flex-start,
+  $align: flex-start,
+  $content: flex-start
+) {
+  display: flex;
+  flex-direction: $direction;
+  flex-wrap: $wrap;
+  justify-content: $justify;
+  align-items: $align;
+  align-content: $content;
+}
+
+@mixin grid-cells($screen) {
+  @for $i from 1 through $grid-columns {
+    .#{$screen}-#{$i} {
+      width: ($grid-size * $i) + ($grid-gutter * ($i - 1));
+      &:not(:last-child) {
+        margin-right: $grid-gutter;
+      }
+    }
+  }
+}
+
+@mixin make-grid {
+  @include grid-cells("xs");
+
+  @each $screen in $screens {
+    @media screen and (min-width: map.get($breakpoints, $screen)) {
+      @include grid-cells($screen);
+    }
+  }
+}

@@ -1,0 +1,32 @@
+@use "sass:math";
+@use "sass:map";
+
+// Colors
+$text-color-dark: #3d3d3d;
+$text-color-light: #f7f8fa;
+$section-bg-light: #f4f4f4;
+$section-bg-dark: #f6f6ff;
+$border-color-light: #dbdde0;
+$bg-color-light: #46b581;
+$bg-color-dark: #19a463;
+
+// Typography
+$font-family: "Quicksand", sans-serif;
+$font-size-sm: 14px;
+
+// Breakpoints
+$breakpoints: (
+  sm: "30em",
+  md: "48em",
+  lg: "62em",
+  xl: "80em",
+);
+$screens: map-keys($breakpoints);
+
+// Grid system
+$grid-gutter: 1%;
+$grid-columns: 12;
+$no-of-grid-gutters: $grid-columns - 1;
+$total-grid-gutters: $no-of-grid-gutters * $grid-gutter;
+$total-grid-size: 100% - $total-grid-gutters;
+$grid-size: math.div($total-grid-size, $grid-columns);
