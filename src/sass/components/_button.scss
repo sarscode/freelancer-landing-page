@@ -1,0 +1,12 @@
+.btn {
+  border-radius: 6px;
+  padding: 0.75rem 1.5rem;
+
+  &--primary {
+    background-color: $bg-color-light;
+    color: $text-color-light;
+  }
+  &--plain {
+    background-color: transparent;
+  }
+}

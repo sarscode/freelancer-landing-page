@@ -1,0 +1,19 @@
+.input-group {
+  @include flex;
+  background-color: $text-color-light;
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid $border-color-light;
+
+  input {
+    border: none;
+    border-radius: 0;
+    flex-grow: 2;
+    background-color: transparent;
+
+    &:focus {
+      outline: none;
+      background-color: $section-bg-dark;
+    }
+  }
+}

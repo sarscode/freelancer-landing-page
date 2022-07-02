@@ -1,1 +1,11 @@
 @include make-grid;
+
+.row {
+  @include flex;
+}
+
+.container {
+  max-width: 1200px;
+  width: 88%;
+  margin: 0 auto;
+}

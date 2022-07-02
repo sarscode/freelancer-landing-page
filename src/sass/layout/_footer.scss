@@ -1,0 +1,57 @@
+.footer {
+  &__logo {
+    margin-bottom: 2rem;
+  }
+
+  &__top {
+    padding: 5rem 0;
+    background-color: $section-bg-light;
+  }
+
+  &__bottom {
+    padding: 1rem 0;
+  }
+
+  &__nav {
+    &link {
+      line-height: 2;
+      display: inline-block;
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  &__legal {
+    color: rgba($text-color-dark, 0.75);
+    padding: 0 0.5rem;
+
+    &:hover {
+      color: $text-color-dark;
+    }
+  }
+
+  &__copyright {
+    @include flex($justify: space-evenly);
+    font-size: $font-size-sm;
+    padding: 0.5rem 0;
+
+    &-text {
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  &__subscribe {
+    max-width: 95%;
+  }
+}
+
+.social {
+  @include flex($justify: center);
+
+  &__link {
+    padding: 0.5rem;
+
+    &:hover {
+      background-color: $section-bg-dark;
+    }
+  }
+}
