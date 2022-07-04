@@ -1,0 +1,14 @@
+.subscribe {
+  margin: auto;
+  padding: 5rem 2rem;
+  background: url("../assets/icons/bell.png") top left/25% no-repeat,
+    url("../assets/icons/bell_2.png") 25% 0/15% no-repeat $bg-color-light;
+  border-radius: 15px;
+  text-align: center;
+  color: $text-color-light;
+
+  &__form {
+    max-width: 700px;
+    margin: 3rem auto 0;
+  }
+}

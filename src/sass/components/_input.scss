@@ -8,12 +8,16 @@
   input {
     border: none;
     border-radius: 0;
-    flex-grow: 2;
+    flex-grow: 3;
     background-color: transparent;
 
     &:focus {
       outline: none;
       background-color: $section-bg-dark;
     }
+  }
+
+  button {
+    flex-grow: 1;
   }
 }

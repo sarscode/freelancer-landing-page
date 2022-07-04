@@ -1,5 +1,9 @@
 @include make-grid;
 
+.section {
+  padding-bottom: 6rem;
+}
+
 .row {
   @include flex;
 }
