@@ -12,3 +12,47 @@
     margin: 3rem auto 0;
   }
 }
+
+.projects {
+  @include flex($wrap: nowrap);
+  overflow-x: auto;
+  margin-top: 2rem;
+
+  &-title {
+    @include flex($justify: space-between);
+
+    .cta {
+      @include flex($align: center);
+      display: inline-flex;
+      color: $bg-color-dark;
+      font-weight: bold;
+    }
+  }
+
+  .project {
+    margin-bottom: 2rem;
+    flex-shrink: 0;
+
+    &__img {
+      width: 100%;
+    }
+
+    &__info {
+      @include flex($align: center);
+      margin-top: 1rem;
+    }
+
+    &__avatar {
+      margin-right: 1rem;
+    }
+
+    &__title {
+      margin-bottom: 0.25rem;
+    }
+
+    &__owner {
+      margin: 0;
+      font-size: $font-size-sm;
+    }
+  }
+}
