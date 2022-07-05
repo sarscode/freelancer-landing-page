@@ -1,3 +1,13 @@
+.stats {
+  margin-top: 2rem;
+  @include flex($justify: space-between, $align: center);
+
+  .stat {
+    text-align: center;
+    margin-top: 1rem;
+  }
+}
+
 .subscribe {
   margin: auto;
   padding: 5rem 2rem;
