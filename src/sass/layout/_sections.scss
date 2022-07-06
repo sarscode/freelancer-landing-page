@@ -44,6 +44,24 @@
   }
 }
 
+.get-started {
+  @include flex($align: center);
+
+  &-container {
+    background-color: $section-bg-dark;
+    padding: 4rem 0 6rem;
+  }
+
+  &__content {
+    padding: 1.5rem;
+  }
+
+  .cta {
+    display: inline-block;
+    margin-top: 1rem;
+  }
+}
+
 .subscribe {
   margin: auto;
   padding: 5rem 2rem;
