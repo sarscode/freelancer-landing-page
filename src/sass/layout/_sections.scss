@@ -1,10 +1,46 @@
 .stats {
   margin-top: 2rem;
-  @include flex($justify: space-between, $align: center);
+  @include flex($justify: space-between);
 
   .stat {
     text-align: center;
     margin-top: 1rem;
+  }
+}
+
+.steps {
+  counter-reset: steps;
+
+  &-container {
+    @include flex($align: center);
+  }
+
+  .step {
+    counter-increment: steps;
+    padding-left: 2.75rem;
+    position: relative;
+
+    &::before {
+      content: "0" counter(steps);
+      font-size: 2rem;
+      font-weight: bold;
+      position: relative;
+      left: -2.5rem;
+      top: 2rem;
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      height: 1rem;
+      width: 1.75rem;
+      background-color: rgba($bg-color-dark, 0.7);
+      position: absolute;
+      left: 0.5rem;
+      top: 2.75rem;
+    }
+
+    @include steps-color;
   }
 }
 

@@ -1,4 +1,5 @@
 @use "sass:map";
+@use "sass:list";
 
 @mixin flex(
   $direction: row,
@@ -32,6 +33,19 @@
   @each $screen in $screens {
     @media screen and (min-width: map.get($breakpoints, $screen)) {
       @include grid-cells($screen);
+    }
+  }
+}
+
+@mixin steps-color {
+  @each $color in $steps-colors {
+    &:nth-of-type(#{list.index($steps-colors, $color)}) {
+      &::before {
+        color: $color;
+      }
+      &::after {
+        background-color: rgba($color, 0.3);
+      }
     }
   }
 }
