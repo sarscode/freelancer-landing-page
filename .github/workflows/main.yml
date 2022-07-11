@@ -45,7 +45,7 @@ jobs:
         uses: dswistowski/surge-sh-action@v1.0.1
         with:
           # your surge.sh domain to deploy
-          domain: freelancer-landing-page
+          domain: freelancer-landing-page.surge.sh
           # surge.sh login
           login: ${{ secrets.SURGE_LOGIN }}
           # surge.sh token, generate it with `surge token` command
