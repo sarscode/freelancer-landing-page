@@ -37,6 +37,12 @@
   }
 }
 
+@mixin media-query($breakpoint) {
+  @media screen and (min-width: map.get($breakpoints, $breakpoint)) {
+    @content;
+  }
+}
+
 @mixin steps-color {
   @each $color in $steps-colors {
     &:nth-of-type(#{list.index($steps-colors, $color)}) {

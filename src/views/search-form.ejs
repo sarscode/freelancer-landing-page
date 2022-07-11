@@ -1,0 +1,62 @@
+<div class="container">
+  <form action="#" class="row search">
+    <div class="xs-12 lg-6 search-input">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="25"
+        viewBox="0 0 24 25"
+        fill="none"
+      >
+        <path
+          d="M11 19.5C15.4183 19.5 19 15.9183 19 11.5C19 7.08172 15.4183 3.5 11 3.5C6.58172 3.5 3 7.08172 3 11.5C3 15.9183 6.58172 19.5 11 19.5Z"
+          stroke="#52575C"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+        <path
+          d="M21 21.5L16.65 17.15"
+          stroke="#52575C"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+      <input
+        type="search"
+        name="search"
+        id="search"
+        class="input"
+        placeholder="Search Jobs by keyword"
+      />
+    </div>
+    <div class="row xs-12 lg-6">
+      <div class="xs-3 sm-2 lg-2">
+        <input type="checkbox" name="all-jobs" id="all-jobs" class="checkbox" />
+        <label for="all-jobs">All Jobs</label>
+      </div>
+      <div class="xs-4 sm-2 lg-2 search-input search-select">
+        <select name="location" id="location" class="input">
+          <option value="location">Location</option>
+          <option value="emea">EMEA</option>
+        </select>
+      </div>
+      <div class="xs-4 sm-2 lg-2 search-input search-select">
+        <select name="catergory" id="catergory" class="input">
+          <option value="catergory" selected>Catergory</option>
+          <option value="design">Design</option>
+          <option value="engineering">Engineering</option>
+        </select>
+      </div>
+      <div class="xs-5 sm-2 lg-2 search-input">
+        <button type="reset" class="btn btn--plain input">Clear</button>
+      </div>
+      <div class="xs-7 sm-4 lg-4 search-input">
+        <button type="submit" class="btn btn--primary input">
+          Find Creatives
+        </button>
+      </div>
+    </div>
+  </form>
+</div>
