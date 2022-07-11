@@ -32,7 +32,11 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: build
         run: |
+          if [ -e package-lock.json ]; then
           npm ci
+          else
+          npm i
+          fi
           npm run build
       
       - name: Publish to surge.sh
