@@ -2,7 +2,6 @@
   "name": "freelancer-landing-page",
   "version": "1.0.0",
   "description": "A sample project built using parcel-transformer-ejs",
-  "main": "index.js",
   "repository": "git@github.com:sarscode/freelancer-landing-page.git",
   "author": "Salifu Sani Rich <salifusanirich@gmail.com>",
   "license": "MIT",
