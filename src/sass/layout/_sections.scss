@@ -1,10 +1,95 @@
 .stats {
   margin-top: 2rem;
+
   @include flex($justify: space-between);
 
   .stat {
     text-align: center;
     margin-top: 1rem;
+  }
+}
+
+.market {
+  background-color: $section-bg-dark;
+  padding: 5rem 0;
+  position: relative;
+  display: flex;
+
+  @include media-query(lg) {
+    @include flex($justify: flex-end);
+  }
+
+  .cta {
+    display: inline-block;
+    margin: 1rem 0;
+  }
+
+  &-place {
+    position: relative;
+    margin: 0 auto;
+    width: 88%;
+    max-width: 1200px;
+
+    @include flex;
+
+    @include media-query(lg) {
+      @include flex($wrap: nowrap);
+    }
+
+    &__content {
+      padding: 2rem 0;
+    }
+
+    &__showcase {
+      @include flex($wrap: nowrap);
+    }
+
+    &__img {
+      border: 1px solid #dbdde0;
+      filter: drop-shadow(0px 16px 16px rgba(0, 0, 0, 0.08));
+      border-radius: 16px;
+      min-width: 194px;
+      height: 264px;
+      margin-right: 2rem;
+      color: $text-color-light;
+      padding: 1rem 1rem 0 1rem;
+      background-repeat: no-repeat;
+
+      @include flex($direction: column-reverse);
+
+      &:nth-of-type(1) {
+        background: linear-gradient(
+            360deg,
+            rgba(0, 0, 0, 0.7) 0%,
+            rgba(0, 0, 0, 0) 57.61%
+          ),
+          url(../assets/images/ui_ux.jpg) center/cover;
+      }
+      &:nth-of-type(2) {
+        background: linear-gradient(
+            360deg,
+            rgba(0, 0, 0, 0.7) 0%,
+            rgba(0, 0, 0, 0) 57.61%
+          ),
+          url(../assets/images/graphics_design.jpg) center/cover;
+      }
+      &:nth-of-type(3) {
+        background: linear-gradient(
+            360deg,
+            rgba(0, 0, 0, 0.7) 0%,
+            rgba(0, 0, 0, 0) 57.61%
+          ),
+          url(../assets/images/user_interface.jpg) center/cover;
+      }
+      &:nth-of-type(4) {
+        background: linear-gradient(
+            360deg,
+            rgba(0, 0, 0, 0.7) 0%,
+            rgba(0, 0, 0, 0) 57.61%
+          ),
+          url(../assets/images/photography.jpg) center/cover;
+      }
+    }
   }
 }
 
